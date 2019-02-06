@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-class Navbar extends Component {
-  state = {};
+class NavBar extends Component {
   render() {
     return (
       <navbar className="navbar navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          Navbar
+        <a className="navbar-brand" href="https://google.com">
+          Navbar :{" "}
+          <span className="badge badge-pill badge-secondary">
+            {this.props.totalCount}
+          </span>
         </a>
       </navbar>
     );
   }
 }
 
-export default Navbar;
+export default NavBar;
